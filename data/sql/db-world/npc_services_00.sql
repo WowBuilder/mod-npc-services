@@ -11,4 +11,4 @@ DELETE FROM `creature_template_model` WHERE `CreatureID` = @NpcEntry;
 INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES (@NpcEntry, 0, @NpcDisplayID, 1, 1, 12340);
 
 DELETE FROM `creature_template_locale` WHERE `entry` = @NpcEntry AND `locale` = 'zhCN';
-INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (55002, 'zhCN', '迦布里尔', '一条龙服务', 0);
+INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (@NpcEntry, 'zhCN', '迦布里尔', '一条龙服务', 0);
