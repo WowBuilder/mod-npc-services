@@ -11,25 +11,25 @@
 bool NpcServices::OnGossipHello(Player* player, Creature* creature)
 {
     // Restore Health and Mana
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\Spell_Nature_Regenerate:40:40:-18|t Restore HP and MP", GOSSIP_SENDER_MAIN, 1);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\Spell_Nature_Regenerate:40:40:-18|t 恢复生命和法力", GOSSIP_SENDER_MAIN, 1);
     // Reset Instances
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_BG_winAB_underXminutes:40:40:-18|t Reset Instances", GOSSIP_SENDER_MAIN, 2);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_BG_winAB_underXminutes:40:40:-18|t 重置副本冷却", GOSSIP_SENDER_MAIN, 2);
     // Reset Cooldowns
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\SPELL_HOLY_BORROWEDTIME:40:40:-18|t Reset Cooldowns", GOSSIP_SENDER_MAIN, 3);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\SPELL_HOLY_BORROWEDTIME:40:40:-18|t 重置技能冷却", GOSSIP_SENDER_MAIN, 3);
     // Leave Combat
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_BG_AB_defendflags:40:40:-18|t Reset Combat", GOSSIP_SENDER_MAIN, 4);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_BG_AB_defendflags:40:40:-18|t 清除战斗状态", GOSSIP_SENDER_MAIN, 4);
     // Remove Sickness
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\Spell_Shadow_DeathScream:40:40:-18|t Remove Sickness", GOSSIP_SENDER_MAIN, 5);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\Spell_Shadow_DeathScream:40:40:-18|t 移除复活虚弱", GOSSIP_SENDER_MAIN, 5);
     // Repair Items
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\INV_Hammer_24:40:40:-18|t Repair Items", GOSSIP_SENDER_MAIN, 6);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\INV_Hammer_24:40:40:-18|t 修理装备", GOSSIP_SENDER_MAIN, 6);
     // Reset Talents
-    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_WorldEvent_Lunar:40:40:-18|t Reset Talents", GOSSIP_SENDER_MAIN, 7);
+    AddGossipItemFor(player, 10, "|TInterface\\icons\\Achievement_WorldEvent_Lunar:40:40:-18|t 重置天赋", GOSSIP_SENDER_MAIN, 7);
     // Open Bank
-    AddGossipItemFor(player, 10, "|TInterface/Icons/INV_Misc_Bag_07:40:40:-18|t Bank", GOSSIP_SENDER_MAIN, 8);
+    AddGossipItemFor(player, 10, "|TInterface/Icons/INV_Misc_Bag_07:40:40:-18|t 打开银行", GOSSIP_SENDER_MAIN, 8);
     // Open Mailbox
-    AddGossipItemFor(player, 10, "|TInterface/Icons/INV_Letter_11:40:40:-18|t Mail", GOSSIP_SENDER_MAIN, 9);
+    AddGossipItemFor(player, 10, "|TInterface/Icons/INV_Letter_11:40:40:-18|t 打开邮箱", GOSSIP_SENDER_MAIN, 9);
     // Learn Dualspec
-    AddGossipItemFor(player, 10, "|TInterface/Icons/achievement_general:40:40:-18|t Learn Dual Talents", GOSSIP_SENDER_MAIN, 10);
+    AddGossipItemFor(player, 10, "|TInterface/Icons/achievement_general:40:40:-18|t 学习双天赋", GOSSIP_SENDER_MAIN, 10);
 
     SendGossipMenuFor(player, 1, creature->GetGUID());
     return true;
